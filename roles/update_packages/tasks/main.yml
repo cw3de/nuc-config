@@ -1,0 +1,7 @@
+---
+# Run pacman -Syu to update all packages
+- name: update database
+  become: True
+  pacman:
+    update_cache: yes
+    upgrade: yes

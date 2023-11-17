@@ -1,0 +1,25 @@
+---
+- name: copy bashrc
+  ansible.builtin.copy:
+    src: bashrc.sh
+    dest: ~/.bashrc
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644
+
+- name: copy profile
+  ansible.builtin.copy:
+    src: bash_profile.sh
+    dest: ~/.bash_profile
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644
+    force: True
+
+- name: copy vimrc
+  ansible.builtin.copy:
+    src: vimrc.vim
+    dest: ~/.vimrc
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644

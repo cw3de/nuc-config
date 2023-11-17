@@ -1,0 +1,8 @@
+---
+
+- name: setup nuc
+  hosts: nuc
+  roles:
+    - update_packages
+    - user_dotfiles
+    - setup_docker
