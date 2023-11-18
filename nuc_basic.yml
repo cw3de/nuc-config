@@ -1,0 +1,7 @@
+---
+- name: setup basic stuff
+  hosts: nuc
+  roles:
+    - update_packages
+    - user_dotfiles
+    - install_packages

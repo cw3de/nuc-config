@@ -1,0 +1,8 @@
+---
+- name: install packages
+  become: True
+  pacman:
+    name:
+      - man
+      - vim
+    state: latest
