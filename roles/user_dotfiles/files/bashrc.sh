@@ -12,6 +12,6 @@ then
     alias vi='vim'
     alias ll='ls -al'
 
-    alias ydf="df -x tmpfs -x devtmpfs -x efivarsfs -T -h"
+    alias ydf="df -x tmpfs -x devtmpfs -x efivarfs -T -h"
     alias ydu="du -xhd1"
 fi
