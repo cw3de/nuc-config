@@ -1,0 +1,6 @@
+---
+
+- name: setup traefik
+  hosts: nuc
+  roles:
+    - setup_traefik

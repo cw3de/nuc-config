@@ -1,0 +1,24 @@
+---
+log:
+  # filePath: /traefik.log
+  format: common
+  # level: DEBUG
+  level: INFO
+
+accessLog:
+  # filePath:
+  format: common
+
+api:
+  insecure: true
+  dashboard: true
+#  debug: true
+
+providers:
+  docker:
+    watch: true
+#      - "--providers.docker=true"
+#      - "--providers.docker.exposedbydefault=false"
+#      - "--entrypoints.web.address=:80"
+#      - "--entrypoints.websecure.address=:443"
+

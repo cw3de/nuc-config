@@ -1,0 +1,18 @@
+---
+- name: create traefik directory
+  ansible.builtin.file:
+    path: ~/docker/traefik
+    state: directory
+    mode: 0755
+
+- name: copy Traefik docker container
+  ansible.builtin.copy:
+    src: docker-compose.yml
+    dest: ~/docker/traefik/docker-compose.yml
+    mode: 0644
+
+- name: copy Traefik config
+  ansible.builtin.copy:
+    src: traefik.yml
+    dest: ~/docker/traefik/traefik.yml
+    mode: 0644
