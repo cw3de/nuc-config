@@ -5,4 +5,5 @@
     name:
       - man
       - vim
+      - parted
     state: latest

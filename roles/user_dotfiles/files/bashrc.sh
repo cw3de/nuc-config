@@ -14,4 +14,6 @@ then
 
     alias ydf="df -x tmpfs -x devtmpfs -x efivarfs -T -h"
     alias ydu="du -xhd1"
+    alias yupdateall="sudo pacman -Syu" # Sync, refresh, update
+    alias ykeyupdate="sudo pacman -Sy archlinux-keyring && sudo pacman -Su"
 fi
